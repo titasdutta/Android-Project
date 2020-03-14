@@ -61,67 +61,58 @@
 <!--</LinearLayout>-->
 
 
-<RelativeLayout android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".AuthActivity"
-    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <include
-        android:id="@+id/menu_bar"
-        layout="@layout/menu"/>
 
 
     <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".WelcomeActivity"
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center_horizontal"
-        android:layout_below="@id/menu_bar"
         android:padding="20dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SIGN UP"
-            android:textSize="20sp"
+            android:text="CHATROOM"
+            android:textSize="40sp"
             android:textStyle="bold"
             />
-        
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/user_name"
-            android:layout_margin="20dp"
-            android:hint="Username" />
+
+
+    <ImageView
+        android:id="@+id/image_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="329dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="100dp"
+        android:src="@drawable/unnamed" />
 
 
 
+    <Button
+        android:id="@+id/welcome_login"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:text="Login" />
+    <Button
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="wrap_content"
+        android:text="Get Started"
+        android:layout_margin="10dp"
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/user_email"
-            android:layout_margin="20dp"
-            android:hint="Email" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/password"
-            android:layout_margin="20dp"
-            android:hint="Password" />
-
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Register"
-            android:id="@+id/sign_up_btn" />
+        android:id="@+id/welcome_register" />
 
 
 
     </LinearLayout>
 
 
-</RelativeLayout>

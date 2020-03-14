@@ -64,7 +64,7 @@
 <RelativeLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".AuthActivity"
+    tools:context=".LoginActivity"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <include
@@ -83,17 +83,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SIGN UP"
+            android:text="LOGIN"
             android:textSize="20sp"
             android:textStyle="bold"
             />
-        
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/user_name"
-            android:layout_margin="20dp"
-            android:hint="Username" />
 
 
 
@@ -116,8 +109,8 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Register"
-            android:id="@+id/sign_up_btn" />
+            android:text="Log in "
+            android:id="@+id/login_btn" />
 
 
 
